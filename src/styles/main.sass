@@ -12,7 +12,7 @@ $camdat: #EB7D4B // màucam
     justify-content: center
     align-items: center
     ul
-        min-width: 500px
+        min-width: 0px
         li 
             display: inline-block
             padding: 10px 25px
@@ -23,7 +23,7 @@ $camdat: #EB7D4B // màucam
             &:hover
                 border-radius: 2px
                 background: darken($mautim,5)
-        // Đây là phần slider
+// Đây là phần slider
 .home_slider
         background: $mautim
         min-height: 368px
@@ -47,7 +47,7 @@ $camdat: #EB7D4B // màucam
 // Đây là phần services nè!!!!
 .home_services
         background: $maungoc
-        min-height: 550px
+        min-height: 600px
         color: #fff
         display: flex
         justify-content: center
@@ -56,10 +56,16 @@ $camdat: #EB7D4B // màucam
         h2
                 font-size: .1.5rem
                 letter-spacing: .0.2rem
+
+        .col-md-3
+                img 
+                        height: 60%
+                        width: 60%
+                margin-top: 70px
 // Đây là phần team nè!!!!
 .home_team
         background: #e7f1f8
-        min-height: 550px
+        min-height: 600px
         color: darken(grey,14)
         display: flex
         justify-content: center
@@ -68,6 +74,7 @@ $camdat: #EB7D4B // màucam
         h2
                 font-size: .1.5rem
                 letter-spacing: .0.2rem
+                font-weight: bold
 
         .col-md-3
                 img 
@@ -89,7 +96,7 @@ $camdat: #EB7D4B // màucam
 //Đây là phần skill nè!!!
 .home_skills
         background: #fff
-        min-height: 550px
+        min-height: 500px
         color: darken(grey,14)
         display: flex
         justify-content: center
@@ -98,21 +105,209 @@ $camdat: #EB7D4B // màucam
         h2
                 font-size: .1.5rem
                 letter-spacing: .0.2rem
+                font-weight: bold
+        h5
+                font-weight: bold
+.progress-circle
+  position: relative
+  display: inline-block
+  margin: 1rem
+  width: 120px
+  height: 120px
+  border-radius: 50%
+  background-color: #ebebeb
+  &:after
+    content: ''
+    display: inline-block
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    -webkit-animation: colorload 2s
+    animation: colorload 2s
+  span
+    font-size: 1.7rem
+    color: #8b8b8b
+    position: absolute
+    left: 33%
+    top: 33%
+    display: block
+    width: 100px
+    height: 100px
+    line-height: 90px
+    margin-left: -30px
+    margin-top: -30px
+    padding-left: 10px
+    text-align: center
+    border-radius: 50%
+    background: #fff
+    z-index: 1
+    &:after
+      content: "%"
+      font-weight: 600
+      color: #8b8b8b
+  &.progress-1:after
+    background-image: linear-gradient(54deg, #30bae7 50%, transparent 50%, transparent), linear-gradient(270deg, #30bae7 50%, #ebebeb 50%, #ebebeb)
+  &.progress-2:after
+    background-image: linear-gradient(0deg, #d74680 50%, transparent 50%, transparent), linear-gradient(270deg, #d74680 50%, #ebebeb 50%, #ebebeb)
+  &.progress-3:after
+    background-image: linear-gradient(-18deg, #15c7a8 50%, transparent 50%, transparent), linear-gradient(270deg, #15c7a8 50%, #ebebeb 50%, #ebebeb)
+  &.progress-4:after
+    background-image: linear-gradient(36deg, #eb7d4b 50%, transparent 50%, transparent), linear-gradient(270deg, #eb7d4b 50%, #ebebeb 50%, #ebebeb)
 
-        .col-md-3
-                img 
-                        width: 200px
-                        height: 200px
-                        border-radius: 100px
-                        -moz-border-radius: 100px
-                        -webkit-border-radius: 100px
-                h5 
-                        font-size: 17px
-                        font-weight: bold
-                h4 
-                        font-size: 15px
-                h6 
-                        color: $maungoc
-                        font-size: 12px
-                i
-                        padding: 12px
+@-webkit-keyframes colorload
+  0%
+    opacity: 0
+    transform: rotate(0deg)
+
+  100%
+    opacity: 1
+    transform: rotate(360deg)
+
+// Phần .home_portfolio !!
+.home_portfolio
+        background: #ffdd99
+        min-height: 600px
+        color: darken(grey,14)
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        h2
+                font-size: .1.5rem
+                letter-spacing: .0.2rem
+                font-weight: bold
+                margin-top: 70px
+        p
+                font-size: 16px
+        .col-md-6
+                h6
+                        font-weight: bold   
+        .col
+                .btn-success
+                        background: $maungoc
+                        color: #fff
+                        padding: 12px 
+                        padding-left: 40px
+                        padding-right: 40px
+                        margin-top: 40px
+                        margin-bottom: 40px
+                        font-size: 14px
+        .col-md
+                ul
+                        min-width: 0px
+                        li 
+                                display: inline-block
+                                margin: 20px 4px 20px 4px
+                                a 
+                                        color: black
+                                        text-decoration: none
+                                        background: #ebc985
+                                        border-radius: 4px
+                                        padding: 5px 20px
+                                        
+                                        
+
+                                a:hover
+                                        border-radius: 4px
+                                        background: white
+// Phần FB!!
+.home_fb
+        background: #d74680
+        min-height: 650px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        h2
+                font-size: .1.5rem
+                letter-spacing: .0.2rem
+                font-weight: bold
+                color: #fff
+        p
+                font-size: 16px
+                color: #fff
+        .col-md-6
+                .col-md-4
+                        img 
+                                width: 140px
+                                height: 140px
+                                border-radius: 70px
+                                -moz-border-radius: 70px
+                                -webkit-border-radius: 70px
+                                margin-top: 60px
+                .col-md-8
+                        margin-top: 60px
+                        p 
+                                text-align: left
+
+                        h5 
+                                color: white
+                                font-weight: bold
+                                font-size: 17px
+                                text-align: left
+                        h6 
+                                color: #ffdd99
+                                text-align: left
+                                font-size: 14px
+// Đây là contact
+.home_contact
+        background: #3c5499
+        min-height: 550px
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        
+        h2
+                font-size: .1.5rem
+                letter-spacing: .0.2rem
+                font-weight: bold
+                color: #fff
+                margin-top: 40px
+        p
+                font-size: 16px
+                color: #fff
+        .col-md-4
+                .form-control
+                        background-color: #273a71
+                        border-color: #273a71
+                        margin-top: 50px
+
+        .col-md-8
+                margin-top: 20px
+                .form-control
+                        background-color: #273a71
+                        border-color: #273a71
+        .col
+                .btn-success
+                        background: #30bae7
+                        margin: 40px
+                        padding: 15px 70px
+// Đây là menu nhé!!
+.home_footer
+    background: #344b8e
+    display: flex
+    justify-content: center
+    text-align: center
+    align-items: center
+    min-width: 50px
+    ul
+        li 
+            display: inline-block
+            padding: 10px 28px 
+            margin-top: 14px
+            a 
+                color: #fff
+                text-decoration: none
+                font-size: 20px
+                font-weight: bold
+            a:hover
+                border-radius: 4px
+                color: #30bae7 
+
+                                
+                
+
+                                        
+
+                
