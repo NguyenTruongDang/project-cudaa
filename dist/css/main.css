@@ -46,8 +46,28 @@
   align-items: center;
   text-align: center; }
   .home_services h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
     font-size: 0.1 0.5rem;
+    padding-bottom: 30px;
+    padding-top: 20px;
     letter-spacing: 0 0.2rem; }
+    .home_services h2:before, .home_services h2:after {
+      content: '';
+      display: block;
+      background: #14a58c;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+    .home_services h2:before {
+      width: 80px;
+      height: 5px;
+      bottom: 9px; }
+    .home_services h2:after {
+      width: 30px;
+      height: 10px;
+      bottom: 6px; }
   .home_services .col-md-3 {
     margin-top: 70px; }
     .home_services .col-md-3 img {
@@ -63,9 +83,27 @@
   align-items: center;
   text-align: center; }
   .home_team h2 {
+    text-transform: uppercase;
+    position: relative;
     font-size: 0.1 0.5rem;
-    letter-spacing: 0 0.2rem;
-    font-weight: bold; }
+    padding-bottom: 30px;
+    padding-top: 20px;
+    letter-spacing: 0 0.2rem; }
+    .home_team h2:before, .home_team h2:after {
+      content: '';
+      display: block;
+      background: #c8d9e5;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+    .home_team h2:before {
+      width: 80px;
+      height: 5px;
+      bottom: 9px; }
+    .home_team h2:after {
+      width: 30px;
+      height: 10px;
+      bottom: 6px; }
   .home_team .col-md-3 img {
     width: 200px;
     height: 200px;
@@ -92,9 +130,26 @@
   align-items: center;
   text-align: center; }
   .home_skills h2 {
+    text-transform: uppercase;
+    position: relative;
     font-size: 0.1 0.5rem;
-    letter-spacing: 0 0.2rem;
-    font-weight: bold; }
+    padding-bottom: 40px;
+    letter-spacing: 0 0.2rem; }
+    .home_skills h2:before, .home_skills h2:after {
+      content: '';
+      display: block;
+      background: #dfe8ed;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+    .home_skills h2:before {
+      width: 80px;
+      height: 5px;
+      bottom: 9px; }
+    .home_skills h2:after {
+      width: 30px;
+      height: 10px;
+      bottom: 6px; }
   .home_skills h5 {
     font-weight: bold; }
 
@@ -161,10 +216,27 @@
   align-items: center;
   text-align: center; }
   .home_portfolio h2 {
+    text-transform: uppercase;
+    position: relative;
     font-size: 0.1 0.5rem;
-    letter-spacing: 0 0.2rem;
-    font-weight: bold;
-    margin-top: 70px; }
+    padding-bottom: 30px;
+    padding-top: 20px;
+    letter-spacing: 0 0.2rem; }
+    .home_portfolio h2:before, .home_portfolio h2:after {
+      content: '';
+      display: block;
+      background: #e5c37f;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+    .home_portfolio h2:before {
+      width: 80px;
+      height: 5px;
+      bottom: 9px; }
+    .home_portfolio h2:after {
+      width: 30px;
+      height: 10px;
+      bottom: 6px; }
   .home_portfolio p {
     font-size: 16px; }
   .home_portfolio .col-md-6 h6 {
@@ -201,10 +273,28 @@
   align-items: center;
   text-align: center; }
   .home_fb h2 {
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
     font-size: 0.1 0.5rem;
-    letter-spacing: 0 0.2rem;
-    font-weight: bold;
-    color: #fff; }
+    padding-bottom: 30px;
+    padding-top: 20px;
+    letter-spacing: 0 0.2rem; }
+    .home_fb h2:before, .home_fb h2:after {
+      content: '';
+      display: block;
+      background: #b73c6d;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+    .home_fb h2:before {
+      width: 80px;
+      height: 5px;
+      bottom: 9px; }
+    .home_fb h2:after {
+      width: 30px;
+      height: 10px;
+      bottom: 6px; }
   .home_fb p {
     font-size: 16px;
     color: #fff; }
@@ -237,11 +327,28 @@
   align-items: center;
   text-align: center; }
   .home_contact h2 {
-    font-size: 0.1 0.5rem;
-    letter-spacing: 0 0.2rem;
-    font-weight: bold;
     color: #fff;
-    margin-top: 40px; }
+    text-transform: uppercase;
+    position: relative;
+    font-size: 0.1 0.5rem;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    letter-spacing: 0 0.2rem; }
+    .home_contact h2:before, .home_contact h2:after {
+      content: '';
+      display: block;
+      background: #273a71;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+    .home_contact h2:before {
+      width: 80px;
+      height: 5px;
+      bottom: 9px; }
+    .home_contact h2:after {
+      width: 30px;
+      height: 10px;
+      bottom: 6px; }
   .home_contact p {
     font-size: 16px;
     color: #fff; }
